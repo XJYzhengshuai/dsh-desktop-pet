@@ -1,0 +1,39 @@
+{
+  "name": "dsh-desktop-pet",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A small desktop pet in the bottom-right corner of the DeepSeek Harness Web UI that reacts to agent activity and calls out when a task finishes.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "desktop-pet",
+    "decoration"
+  ],
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.png"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.png",
+    "assets/pet.png",
+    "assets/voice.mp3",
+    "LICENSE",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}

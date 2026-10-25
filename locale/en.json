@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Desktop Pet",
+    "description": "Shows a small pet in the bottom-right corner of the Web UI. It changes its motion with the agent's activity and calls out when a task finishes."
+  }
+}

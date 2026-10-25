@@ -1,0 +1,5 @@
+# Layer contributed by dsh-desktop-pet: one Host row is enough — the visible pet
+# lives in the Client module declared by package.json `dsh.client`.
+- insert:
+    - id: desktop-pet
+      name: 'dsh-desktop-pet'
