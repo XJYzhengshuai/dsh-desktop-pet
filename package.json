@@ -11,6 +11,17 @@
     "decoration"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XJYzhengshuai/dsh-desktop-pet.git"
+  },
+  "homepage": "https://github.com/XJYzhengshuai/dsh-desktop-pet#readme",
+  "bugs": {
+    "url": "https://github.com/XJYzhengshuai/dsh-desktop-pet/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",

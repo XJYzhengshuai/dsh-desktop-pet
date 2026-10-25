@@ -24,11 +24,11 @@
 需要 DSH Desktop（或带 Web 界面的 `dsh` profile），Node 22+。
 
 ```powershell
-# 1) 安装（本地目录）
-dsh plugin --profile desktop add "link:<本仓库路径>"
+# 1) 直接从 GitHub 安装（本仓库已包含构建产物 client.js，无需本地编译）
+dsh plugin --profile desktop add "github:XJYzhengshuai/dsh-desktop-pet"
 
-# 或者直接从 GitHub 安装（需要先构建出 client.js，本仓库已包含构建产物）
-dsh plugin --profile desktop add "github:<owner>/dsh-desktop-pet"
+# 或者从本地 checkout 安装（开发时用这个，link 会跟随源码改动）
+dsh plugin --profile desktop add "link:<本仓库路径>"
 
 # 2) 重启一次 DSH（bundle 层在启动时组装）
 ```
